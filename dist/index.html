@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="/todo_list">
+      <a href="/">
         TodoList
       </a>
     </header>
@@ -23,27 +23,14 @@
         <div class="error" id="error"></div>
         <div class="button-div">
           <input type="text" name="todo" class="todo" id="todo" placeholder="Todo Item">
-          <button type="button" class="addBtn" id="addBtn">Add Item</button>
+          <button type="button" class="addBtn" tabindex="-1" id="addBtn">Add Item</button>
         </div>
         <div class="checkbox-div" id="checkbox-div">
-          <div class="checkbox-item">
-            <input type="checkbox" class="checkbox-input">
-            <span class="text">Clean room</span>
-            <button type="button" class="deleteBtn">X</button>
-          </div>
-          <div class="checkbox-item">
-            <input type="checkbox" class="checkbox-input">
-            <span class="text">Cook dinner</span>
-            <button type="button" class="deleteBtn">X</button>
-          </div>
-          <div class="checkbox-item">
-            <input type="checkbox" class="checkbox-input">
-            <span class="text">Throw out garbage</span>
-            <button type="button" class="deleteBtn">X</button>
-          </div>
+
         </div>
         <div class="clear-div">
           <button type="button" class="clearBtn" id="clearBtn">Clear All</button>
+          <button type="button" class="clearBtn" id="saveBtn">Save All</button>
         </div>
       </form>
     </div>

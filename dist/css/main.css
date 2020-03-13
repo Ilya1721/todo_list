@@ -55,8 +55,9 @@ body {
         margin: 10px auto; }
   .main .clear-div {
     display: flex;
-    justify-content: center;
-    margin-top: 10px; }
+    justify-content: space-between;
+    width: 350px;
+    margin: 10px auto; }
     .main .clear-div .clearBtn {
       background: #4b4b4b;
       border: 1px solid #444;
