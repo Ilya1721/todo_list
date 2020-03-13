@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 50px auto;
+  align-items: center; }
+  .main form {
+    width: 100%; }
+  .main .button-div {
+    display: flex; }
+    .main .button-div .addBtn {
+      background: #4b4b4b;
+      border: 1px solid #444;
+      cursor: pointer;
+      color: #fff;
+      padding: 7px;
+      font-size: 1em;
+      width: 25%; }
+    .main .button-div .todo {
+      padding: 6px;
+      font-size: 1em;
+      margin-right: -5px;
+      width: 75%; }
+  .main .checkbox-div {
+    margin-top: 10px; }
+    .main .checkbox-div .checkbox-item {
+      display: flex;
+      justify-content: space-between;
+      background: #f2f2f2;
+      border-bottom: 1px solid #eaeaea;
+      min-height: 40px;
+      align-items: center;
+      font-size: 1.1em;
+      word-wrap: break-word; }
+      .main .checkbox-div .checkbox-item .line-through {
+        text-decoration: line-through; }
+      .main .checkbox-div .checkbox-item .deleteBtn {
+        background: #fe0104;
+        cursor: pointer;
+        color: #fff;
+        border: 1px solid gray;
+        margin-right: 5px; }
+      .main .checkbox-div .checkbox-item .checkbox-input {
+        width: 1.5em;
+        height: 1.5em;
+        color: #363839;
+        border: 1px solid #bdc1c6; }
+      .main .checkbox-div .checkbox-item .text {
+        max-width: 300px;
+        margin: 10px auto; }
+  .main .clear-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; }
+    .main .clear-div .clearBtn {
+      background: #4b4b4b;
+      border: 1px solid #444;
+      cursor: pointer;
+      color: #fff;
+      padding: 4px;
+      font-size: 1em;
+      width: 150px; }
+
+.error {
+  margin-bottom: 10px;
+  height: 20px;
+  color: red; }
+
+.header {
+  background: #2d2d2d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 80px; }
+  .header a {
+    color: inherit;
+    text-decoration: none; }
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px auto;
+    align-items: center; }
+    .main .button-div .addBtn {
+      background: #4b4b4b;
+      border: 1px solid #444;
+      cursor: pointer;
+      color: #fff;
+      padding: 7px;
+      font-size: 1.2em;
+      width: 35%; }
+    .main .button-div .todo {
+      padding: 6px;
+      font-size: 1.2em;
+      margin-right: -5px;
+      width: 65%; }
+    .main .checkbox-div {
+      margin-top: 10px; }
+      .main .checkbox-div .checkbox-item {
+        display: flex;
+        justify-content: space-between;
+        background: #f2f2f2;
+        border-bottom: 1px solid #eaeaea;
+        align-items: center;
+        font-size: 1.3em;
+        word-wrap: break-word; }
+        .main .checkbox-div .checkbox-item .line-through {
+          text-decoration: line-through; }
+        .main .checkbox-div .checkbox-item .deleteBtn {
+          background: #fe0104;
+          cursor: pointer;
+          color: #fff;
+          border: 1px solid gray;
+          margin-right: 5px;
+          font-size: 1.1em; }
+        .main .checkbox-div .checkbox-item .checkbox-input {
+          width: 1.5em;
+          height: 1.5em;
+          color: #363839;
+          border: 1px solid #bdc1c6; }
+        .main .checkbox-div .checkbox-item .text {
+          max-width: 200px; }
+    .main .clear-div {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px; }
+      .main .clear-div .clearBtn {
+        background: #4b4b4b;
+        border: 1px solid #444;
+        cursor: pointer;
+        color: #fff;
+        padding: 4px;
+        font-size: 1.2em;
+        width: 150px; }
+  .error {
+    margin-bottom: 10px;
+    height: 20px;
+    color: red; }
+  .header {
+    background: #2d2d2d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 80px; }
+    .header a {
+      color: inherit;
+      text-decoration: none; } }

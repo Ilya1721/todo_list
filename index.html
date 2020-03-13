@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+     content="width=device-width,
+     initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+     content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+     rel="stylesheet">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/">
+        TodoList
+      </a>
+    </header>
+    <div class="main" id="main">
+      <form id="form">
+        <div class="error" id="error"></div>
+        <div class="button-div">
+          <input type="text" name="todo" class="todo" id="todo" placeholder="Todo Item">
+          <button type="button" class="addBtn" id="addBtn">Add Item</button>
+        </div>
+        <div class="checkbox-div" id="checkbox-div">
+          <div class="checkbox-item">
+            <input type="checkbox" class="checkbox-input">
+            <span class="text">Clean room</span>
+            <button type="button" class="deleteBtn">X</button>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" class="checkbox-input">
+            <span class="text">Cook dinner</span>
+            <button type="button" class="deleteBtn">X</button>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" class="checkbox-input">
+            <span class="text">Throw out garbage</span>
+            <button type="button" class="deleteBtn">X</button>
+          </div>
+        </div>
+        <div class="clear-div">
+          <button type="button" class="clearBtn" id="clearBtn">Clear All</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
