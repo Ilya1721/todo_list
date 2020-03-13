@@ -1,0 +1,19 @@
+{
+  "name": "todo_list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://Ilya1721.github.io/todo_list",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist",
+    "start": "live-server dist/"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.0"
+  }
+}
