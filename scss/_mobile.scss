@@ -66,8 +66,11 @@
 
     .clear-div {
       display: flex;
-      justify-content: center;
-      margin-top: 10px;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 75px;
+      width: 150px;
+      margin: 10px auto;
 
       .clearBtn {
         background: #4b4b4b;

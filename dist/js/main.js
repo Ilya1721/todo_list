@@ -130,13 +130,19 @@ function onLoad() {
 
 function saveItems() {
   var items = document.getElementsByClassName("checkbox-input");
-  var itemTexts = document.getElementsByClassName("text");
-  var newItems = [];
-  for(var i = 0; i < items.length; i++) {
-    newItems.push({
-      name: itemTexts[i].innerHTML,
-      checked: items[i].checked
-    });
-    localStorage.setItem('todoItems', JSON.stringify(newItems));
+  if(items.length > 0)
+  {
+    var itemTexts = document.getElementsByClassName("text");
+    var newItems = [];
+    for(var i = 0; i < items.length; i++) {
+      newItems.push({
+        name: itemTexts[i].innerHTML,
+        checked: items[i].checked
+      });
+      localStorage.setItem('todoItems', JSON.stringify(newItems));
+    }
+  }
+  else {
+    localStorage.clear();
   }
 }
